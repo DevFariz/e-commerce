@@ -27,7 +27,7 @@ const Products = () => {
   }, []);
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-2 mb-10">
+    <section className="max-w-screen-2xl mx-auto px-2 mb-20">
       <h2 className="text-center text-3xl mb-20 font-semibold">Products</h2>
       <div className="grid grid-cols-4 gap-10 mb-6">
         {products.map((product) => {

@@ -6,11 +6,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import Contacts from "./pages/Contacts"
+import Footer from "./components/Footer";
 
 function App() {
-  console.log("home");
   return (
-    <div className="App">
+    <div className="flex flex-col justify-between min-h-screen	">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +18,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
