@@ -3,6 +3,7 @@ import Intro from "../components/home/Intro";
 import Products from "../components/home/products";
 
 const Home = () => {
+  
   return (
     <main >
       <Intro />

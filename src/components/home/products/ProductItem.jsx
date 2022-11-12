@@ -3,7 +3,7 @@ import React from "react";
 import CardImg from "../../../assets/svg/shopping-cart.svg";
 import FavoritesImg from "../../../assets/svg/favorites.svg";
 
-const ProductItem = () => {
+const ProductItem = ({name, price, images}) => {
   return (
     <div className="relative">
       <div className="flex flex-col items-end">
@@ -17,16 +17,15 @@ const ProductItem = () => {
         </div>
       </div>
       <img
-        src="https://cdn.shopify.com/s/files/1/0515/6169/3382/products/ILUMA-BRIGHTENING-POWDER-PDP-R02a_600x.jpg?v=1637780346"
-        alt="image"
+        className="w-full"
+        src={images[0].url}
+        alt={name}
       />
       <div className="flex justify-between py-3 px-1 text-xl">
-        <h4>Product</h4>
-        <p>2000$</p>
+        <h4>{name}</h4>
+        <p className="w-24 text-right">{price.formattedValue}</p>
       </div>
-      <p className="px-1">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      </p>
+      
     </div>
   );
 };
