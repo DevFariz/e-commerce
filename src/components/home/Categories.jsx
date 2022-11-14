@@ -4,20 +4,20 @@ const Categories = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    const options = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': '48fec02c4fmshe34be3216d8a8d6p14b3dcjsn7b018be15528',
-        'X-RapidAPI-Host': 'apidojo-hm-hennes-mauritz-v1.p.rapidapi.com'
-      }
-    };
+    // const options = {
+    //   method: 'GET',
+    //   headers: {
+    //     'X-RapidAPI-Key': '48fec02c4fmshe34be3216d8a8d6p14b3dcjsn7b018be15528',
+    //     'X-RapidAPI-Host': 'apidojo-hm-hennes-mauritz-v1.p.rapidapi.com'
+    //   }
+    // };
 
-    fetch('https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/categories/list?lang=en&country=us', options)
-      .then(response => response.json())
-      .then(response => {
-        setCategories(response)
-      })
-      .catch(err => console.error(err));
+    // fetch('https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/categories/list?lang=en&country=us', options)
+    //   .then(response => response.json())
+    //   .then(response => {
+    //     setCategories(response)
+    //   })
+    //   .catch(err => console.error(err));
   }, [])
 
   return (
