@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import Contacts from "./pages/Contacts"
 import Footer from "./components/Footer";
+import Card from "./pages/Card";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/contacts" element={<Contacts />} />
-      </Routes>
+        <Route path="/card" element={<Card />} />
+      </Routes> 
       <Footer />
     </div>
   );
